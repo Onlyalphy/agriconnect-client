@@ -9,7 +9,7 @@ console.log('🔗 API Client configured for:', API_URL);
 // REDUCED TIMEOUT - Backend must respond fast
 const apiClient = axios.create({
   baseURL: API_URL,
-  timeout: 5000, // 5 seconds
+  timeout: 10000, // 10 seconds
 });
 
 let tokenRefreshPromise = null;
