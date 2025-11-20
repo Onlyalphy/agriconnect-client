@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
       
       // REDUCED TO 3 SECONDS - Backend MUST be fast
       const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new Error('Backend timeout (3s)')), 3000)
+        setTimeout(() => reject(new Error('Backend timeout (1s)')), 1000)
       );
       
       const profilePromise = getMe();
